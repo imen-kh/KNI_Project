@@ -1,0 +1,34 @@
+/* Original KNI architectural scenes. Artwork is complete when motion is off. */
+.motion-scene-svg{display:block;width:100%;height:auto;overflow:visible}
+.motion-scene .motion-part{transform-box:fill-box;transform-origin:center;animation-duration:8s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.22,.8,.25,1);animation-delay:var(--motion-delay,0s)}
+.motion-scene .cnn-station,.motion-scene .cnn-hub,.motion-scene .prt-hub,.motion-scene .sky-building{animation-name:kni-scene-assemble}
+.motion-scene .cnn-route,.motion-scene .prt-route{stroke-dasharray:9 18;animation-name:kni-scene-route;animation-timing-function:linear}
+.motion-scene .cnn-status,.motion-scene .prt-status{animation-name:kni-scene-signal}
+.motion-scene .cnn-air,.motion-scene .cnn-steam{animation-name:kni-scene-air}
+.motion-scene .prt-card{animation-name:kni-scene-card}
+.motion-scene .prt-check{animation-name:kni-scene-check}
+.motion-scene .sky-window{animation-name:kni-scene-window}
+.motion-scene .lcy-trace path,.motion-scene .cnv-plan path{stroke-dasharray:1000;animation:kni-scene-draw 8s cubic-bezier(.22,.8,.25,1) infinite}
+.motion-scene .lcy-walls,.motion-scene .lcy-desks,.motion-scene .lcy-supplies{animation-name:kni-scene-assemble;animation-delay:var(--motion-delay,.6s)}
+.motion-scene .lcy-signal{animation-name:kni-scene-signal}
+.motion-scene [class*="lcy-stage-"]{animation-name:kni-scene-stage;animation-delay:var(--motion-delay,0s)}
+.motion-scene .lcy-stage-1{--motion-delay:0s}.motion-scene .lcy-stage-2{--motion-delay:.5s}.motion-scene .lcy-stage-3{--motion-delay:1s}.motion-scene .lcy-stage-4{--motion-delay:1.5s}.motion-scene .lcy-stage-5{--motion-delay:2s}.motion-scene .lcy-stage-6{--motion-delay:2.5s}
+.motion-scene .cnv-paper{animation-name:kni-scene-paper}
+.motion-scene .cnv-pencil{animation-name:kni-scene-pencil}
+.motion-scene .cnv-link path{stroke-dasharray:8 16;animation:kni-scene-route 8s linear infinite}
+.motion-scene .cnv-bubble-1,.motion-scene .cnv-bubble-2{animation-name:kni-scene-talk}
+.motion-scene .cnv-bubble-2{animation-delay:.5s}
+@keyframes kni-scene-assemble{0%,4%{opacity:.18;transform:translateY(24px) scale(.96)}20%,88%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:.18;transform:translateY(24px) scale(.96)}}
+@keyframes kni-scene-route{0%{stroke-dashoffset:150;opacity:.3}20%,85%{opacity:1}100%{stroke-dashoffset:-150;opacity:.3}}
+@keyframes kni-scene-signal{0%,26%{opacity:.3;transform:translateY(8px)}39%,84%{opacity:1;transform:translateY(0)}95%,100%{opacity:.3;transform:translateY(8px)}}
+@keyframes kni-scene-air{0%,25%,100%{opacity:.3;transform:translateY(4px)}42%,75%{opacity:1;transform:translateY(-3px)}}
+@keyframes kni-scene-card{0%,4%{opacity:.35;transform:translateY(16px) scale(.96)}20%,78%{opacity:1;transform:translateY(0) scale(1)}90%,100%{opacity:.35;transform:translateY(16px) scale(.96)}}
+@keyframes kni-scene-check{0%,24%{opacity:.25;transform:scale(.88)}38%,89%{opacity:1;transform:scale(1)}100%{opacity:.25;transform:scale(.88)}}
+@keyframes kni-scene-window{0%,20%,100%{opacity:.15}35%,80%{opacity:1}}
+@keyframes kni-scene-draw{0%,4%{stroke-dashoffset:1000;opacity:.35}38%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:1000;opacity:.35}}
+@keyframes kni-scene-stage{0%,10%{opacity:.45;transform:translateY(2px)}22%,85%{opacity:1;transform:translateY(0)}100%{opacity:.45;transform:translateY(2px)}}
+@keyframes kni-scene-paper{0%,100%{transform:translateY(3px)}28%,80%{transform:translateY(0)}}
+@keyframes kni-scene-pencil{0%,10%{transform:translate(-12px,9px) rotate(-5deg)}33%,80%{transform:translate(0,0) rotate(0deg)}100%{transform:translate(-12px,9px) rotate(-5deg)}}
+@keyframes kni-scene-talk{0%,8%,100%{opacity:.45;transform:translateY(8px) scale(.97)}28%,82%{opacity:1;transform:translateY(0) scale(1)}}
+.motion-paused .motion-scene-svg *{animation:none!important;stroke-dasharray:none!important;stroke-dashoffset:0!important}
+@media(prefers-reduced-motion:reduce){.motion-scene-svg *{animation:none!important;stroke-dasharray:none!important;stroke-dashoffset:0!important}}

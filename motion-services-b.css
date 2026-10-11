@@ -1,0 +1,71 @@
+/* Detailed, locally rendered service miniatures. All scenes rest in a complete state. */
+.motion-scene .motion-scene-svg{display:block;width:100%;height:100%;overflow:visible}
+.motion-scene .motion-part{transform-box:fill-box;transform-origin:center;animation-duration:8s;animation-timing-function:cubic-bezier(.22,.7,.22,1);animation-iteration-count:infinite;animation-fill-mode:both}
+.motion-scene .spc-desk-a{animation-name:spc-desk-a}
+.motion-scene .spc-desk-b{animation-name:spc-desk-b}
+.motion-scene .spc-desk-c{animation-name:spc-desk-c}
+.motion-scene .spc-chair-a{animation-name:spc-chair-a}
+.motion-scene .spc-chair-b{animation-name:spc-chair-b}
+.motion-scene .spc-chair-c{animation-name:spc-chair-c}
+.motion-scene .spc-cabinet{animation-name:spc-cabinet}
+.motion-scene .spc-plant-a{animation-name:spc-plant-a}
+.motion-scene .spc-plant-b{animation-name:spc-plant-b}
+.motion-scene .spc-route{stroke-dashoffset:0;animation:spc-route 8s ease-in-out infinite both}
+@keyframes spc-desk-a{0%,7%{transform:translate(-60px,78px)}22%{transform:translate(-34px,17px)}34%,88%{transform:none}100%{transform:translate(-60px,78px)}}
+@keyframes spc-desk-b{0%,10%{transform:translate(65px,-55px)}26%{transform:translate(31px,16px)}39%,88%{transform:none}100%{transform:translate(65px,-55px)}}
+@keyframes spc-desk-c{0%,14%{transform:translate(-77px,-48px)}31%{transform:translate(-32px,16px)}45%,88%{transform:none}100%{transform:translate(-77px,-48px)}}
+@keyframes spc-chair-a{0%,22%{transform:translate(-12px,65px)}37%{transform:translate(7px,8px)}43%,88%{transform:none}100%{transform:translate(-12px,65px)}}
+@keyframes spc-chair-b{0%,26%{transform:translate(59px,32px)}41%{transform:translate(7px,6px)}47%,88%{transform:none}100%{transform:translate(59px,32px)}}
+@keyframes spc-chair-c{0%,31%{transform:translate(-56px,35px)}47%{transform:translate(8px,4px)}53%,88%{transform:none}100%{transform:translate(-56px,35px)}}
+@keyframes spc-cabinet{0%,10%{transform:translate(46px,23px);opacity:.12}29%,89%{transform:none;opacity:1}100%{transform:translate(46px,23px);opacity:.12}}
+@keyframes spc-plant-a{0%,30%{transform:translate(-35px,18px);opacity:0}43%,89%{transform:none;opacity:1}100%{transform:translate(-35px,18px);opacity:0}}
+@keyframes spc-plant-b{0%,42%{transform:translate(39px,20px);opacity:0}55%,89%{transform:none;opacity:1}100%{transform:translate(39px,20px);opacity:0}}
+@keyframes spc-route{0%,7%{stroke-dashoffset:1;opacity:.15}29%,75%{stroke-dashoffset:0;opacity:.9}90%{stroke-dashoffset:0;opacity:.25}100%{stroke-dashoffset:1;opacity:.15}}
+/* Supplies arrive across the packing rail; upper, middle and lower shelves fill in sequence. */
+.motion-scene .sup-row-0{animation-name:sup-stock-upper}
+.motion-scene .sup-row-1{animation-name:sup-stock-upper;animation-delay:.45s}
+.motion-scene .sup-row-2{animation-name:sup-stock-middle;animation-delay:.3s}
+.motion-scene .sup-paper-0{animation-name:sup-stock-middle}
+.motion-scene .sup-paper-1{animation-name:sup-stock-middle;animation-delay:.4s}
+.motion-scene .sup-paper-2{animation-name:sup-stock-lower}
+.motion-scene .sup-paper-3{animation-name:sup-stock-upper;animation-delay:.8s}
+.motion-scene .sup-organizers{animation-name:sup-stock-lower;animation-delay:.5s}
+.motion-scene .sup-restock{animation-name:sup-delivery}
+.motion-scene .sup-tray{animation-name:sup-tray}
+.motion-scene .sup-pens{animation-name:sup-pens}
+.motion-scene .sup-plant{animation-name:sup-plant}
+@keyframes sup-stock-upper{0%,10%{transform:translate(-38px,38px);opacity:0}25%,86%{transform:none;opacity:1}98%,100%{transform:translate(-38px,38px);opacity:0}}
+@keyframes sup-stock-middle{0%,24%{transform:translate(-43px,27px);opacity:0}39%,86%{transform:none;opacity:1}98%,100%{transform:translate(-43px,27px);opacity:0}}
+@keyframes sup-stock-lower{0%,36%{transform:translate(-38px,19px);opacity:0}51%,86%{transform:none;opacity:1}98%,100%{transform:translate(-38px,19px);opacity:0}}
+@keyframes sup-delivery{0%,5%{transform:translate(-39px,19px);opacity:0}12%{transform:translate(-39px,19px);opacity:1}30%{transform:translate(34px,-17px);opacity:1}42%{transform:translate(20px,-73px);opacity:0}49%{transform:translate(-39px,19px);opacity:0}57%{transform:translate(-39px,19px);opacity:1}71%,86%{transform:none;opacity:1}100%{transform:translate(-39px,19px);opacity:0}}
+@keyframes sup-tray{0%,15%{transform:translate(-26px,13px);opacity:0}34%,88%{transform:none;opacity:1}100%{transform:translate(-26px,13px);opacity:0}}
+@keyframes sup-pens{0%,43%{transform:translate(0,-24px);opacity:0}56%,88%{transform:none;opacity:1}100%{transform:translate(0,-24px);opacity:0}}
+@keyframes sup-plant{0%,49%{transform:translate(-31px,15px);opacity:0}62%,90%{transform:none;opacity:1}100%{transform:translate(-31px,15px);opacity:0}}
+/* Copier sheets feed toward the tray while the pantry prepares and serves coffee. */
+.motion-scene .prn-machine{animation-name:prn-machine}
+.motion-scene .prn-pantry{animation-name:prn-pantry}
+.motion-scene .prn-shelf{animation-name:prn-shelf}
+.motion-scene .prn-paper{animation-name:prn-paper}
+.motion-scene .prn-sheet-0{animation-name:prn-sheet-a}
+.motion-scene .prn-sheet-1{animation-name:prn-sheet-b}
+.motion-scene .prn-sheet-2{animation-name:prn-sheet-c}
+.motion-scene .prn-cup-a{animation-name:prn-cup}
+.motion-scene .prn-cup-b{animation-name:prn-cup;animation-delay:.45s}
+.motion-scene .prn-coffee{animation-name:prn-coffee;transform-origin:top center}
+.motion-scene .prn-steam{animation-name:prn-steam}
+.motion-scene .prn-refresh{animation-name:prn-refresh}
+.motion-scene .prn-plant{animation-name:prn-plant}
+@keyframes prn-machine{0%,4%{transform:translate(-29px,15px);opacity:.2}20%,90%{transform:none;opacity:1}100%{transform:translate(-29px,15px);opacity:.2}}
+@keyframes prn-pantry{0%,7%{transform:translate(35px,18px);opacity:.2}24%,90%{transform:none;opacity:1}100%{transform:translate(35px,18px);opacity:.2}}
+@keyframes prn-shelf{0%,11%{transform:translate(0,-20px);opacity:0}25%,89%{transform:none;opacity:1}100%{transform:translate(0,-20px);opacity:0}}
+@keyframes prn-paper{0%,19%{transform:translate(0,-32px);opacity:0}30%,88%{transform:none;opacity:1}100%{transform:translate(0,-32px);opacity:0}}
+@keyframes prn-sheet-a{0%,29%{transform:translate(25px,-16px);opacity:0}31%{transform:translate(25px,-16px);opacity:1}42%,90%{transform:none;opacity:1}100%{transform:none;opacity:0}}
+@keyframes prn-sheet-b{0%,40%{transform:translate(25px,-16px);opacity:0}42%{transform:translate(25px,-16px);opacity:1}53%,90%{transform:none;opacity:1}100%{transform:none;opacity:0}}
+@keyframes prn-sheet-c{0%,51%{transform:translate(25px,-16px);opacity:0}53%{transform:translate(25px,-16px);opacity:1}64%,90%{transform:none;opacity:1}100%{transform:none;opacity:0}}
+@keyframes prn-cup{0%,21%{transform:translate(20px,10px);opacity:0}33%,90%{transform:none;opacity:1}100%{transform:translate(20px,10px);opacity:0}}
+@keyframes prn-coffee{0%,35%{transform:scaleY(.02);opacity:0}40%,55%{transform:scaleY(1);opacity:1}59%,100%{transform:scaleY(.02);opacity:0}}
+@keyframes prn-steam{0%,51%{transform:translateY(6px);opacity:0}61%{transform:translateY(0);opacity:.5}70%{transform:translateY(-4px);opacity:.65}79%{transform:translateY(-8px);opacity:.1}80%{transform:translateY(4px);opacity:0}86%{transform:translateY(0);opacity:.55}100%{transform:translateY(-10px);opacity:0}}
+@keyframes prn-refresh{0%,33%{transform:translate(0,-23px);opacity:0}49%,90%{transform:none;opacity:1}100%{transform:translate(0,-23px);opacity:0}}
+@keyframes prn-plant{0%,47%{transform:translate(-31px,16px);opacity:0}60%,91%{transform:none;opacity:1}100%{transform:translate(-31px,16px);opacity:0}}
+.motion-scene.motion-paused .motion-part,.motion-paused .motion-scene .motion-part,.motion-scene.motion-paused .spc-route,.motion-paused .motion-scene .spc-route{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.motion-scene .motion-part,.motion-scene .spc-route{animation:none!important;transform:none!important;opacity:1!important;stroke-dashoffset:0!important}.motion-scene .prn-coffee{opacity:0!important}.motion-scene .prn-steam{opacity:.45!important}}

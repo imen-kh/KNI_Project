@@ -1,0 +1,39 @@
+/* Original KNI miniatures: two sequences with a complete, readable still state. */
+.motion-scene .fit-tile{animation:fit-tiles 8s cubic-bezier(.2,.72,.3,1) infinite both;animation-delay:var(--fit-step,0s)}
+.motion-scene .fit-wall{animation:fit-walls 8s cubic-bezier(.2,.72,.3,1) infinite both}
+.motion-scene .fit-wall-back{animation-delay:.18s}
+.motion-scene .fit-glass{animation:fit-glazing 8s cubic-bezier(.2,.72,.3,1) infinite both}
+.motion-scene .fit-furniture{animation:fit-furnish 8s cubic-bezier(.2,.72,.3,1) infinite both}
+.motion-scene .fit-meeting{animation-delay:.14s}.motion-scene .fit-workstation{animation-delay:.28s}.motion-scene .fit-finishing{animation-delay:.42s}
+.motion-scene .fit-lights{animation:fit-lighting 8s cubic-bezier(.2,.72,.3,1) infinite both}
+.motion-scene .mnt-fan{transform-box:fill-box;transform-origin:center;animation:mnt-fans 8s linear infinite}
+.motion-scene .mnt-power-flow{animation:mnt-power 1.7s linear infinite}
+.motion-scene .mnt-water-flow{animation:mnt-water 2.2s linear infinite}
+.motion-scene .mnt-airflow{animation:mnt-air 2.1s linear infinite;animation-delay:var(--mnt-air-delay,0s)}
+.motion-scene .mnt-valve{transform-box:fill-box;transform-origin:center;animation:mnt-valve 8s ease-in-out infinite}
+.motion-scene .mnt-gauge{transform-box:fill-box;transform-origin:50% 90%;animation:mnt-gauge 8s ease-in-out infinite}
+.motion-scene .mnt-status{animation:mnt-system-status 8s linear infinite}
+.motion-scene .mnt-status-air{animation-delay:.5s}
+.motion-scene .mnt-tool{animation:mnt-tool 8s cubic-bezier(.35,.1,.25,1) infinite}
+.motion-scene .mnt-inspection{animation:mnt-inspection 8s ease-in-out infinite}
+.motion-scene .mnt-check{animation:mnt-check 8s ease-in-out infinite}
+.motion-scene .mnt-check-two{animation-delay:.45s}
+.motion-scene .mnt-scan{animation:mnt-scan 8s linear infinite}
+@keyframes fit-tiles{0%,3%{opacity:0;transform:translateY(-32px)}20%,83%{opacity:1;transform:none}95%,100%{opacity:0;transform:none}}
+@keyframes fit-walls{0%,17%{opacity:0;transform:translateY(-100px)}32%,85%{opacity:1;transform:none}96%,100%{opacity:0;transform:translateY(-24px)}}
+@keyframes fit-glazing{0%,29%{opacity:0;transform:translate(35px,-70px)}43%,86%{opacity:1;transform:none}96%,100%{opacity:0;transform:translateY(-20px)}}
+@keyframes fit-furnish{0%,40%{opacity:0;transform:translateY(-55px)}55%,85%{opacity:1;transform:none}96%,100%{opacity:0;transform:translateY(-18px)}}
+@keyframes fit-lighting{0%,53%{opacity:0;transform:translateY(-85px)}65%,85%{opacity:1;transform:none}96%,100%{opacity:0;transform:translateY(-25px)}}
+@keyframes mnt-fans{0%,18%{transform:rotate(0deg)}30%{transform:rotate(180deg)}70%{transform:rotate(1800deg)}100%{transform:rotate(2880deg)}}
+@keyframes mnt-power{to{stroke-dashoffset:-52}}
+@keyframes mnt-water{to{stroke-dashoffset:-60}}
+@keyframes mnt-air{0%{opacity:.15;stroke-dashoffset:46}35%,70%{opacity:.85}100%{opacity:.15;stroke-dashoffset:0}}
+@keyframes mnt-valve{0%,22%{transform:rotate(0deg)}33%,48%{transform:rotate(135deg)}60%,100%{transform:rotate(0deg)}}
+@keyframes mnt-gauge{0%,18%{transform:rotate(-55deg)}38%{transform:rotate(28deg)}50%,89%{transform:rotate(8deg)}100%{transform:rotate(-55deg)}}
+@keyframes mnt-system-status{0%,25%{fill:#c6a664}36%,88%{fill:#8db479}100%{fill:#c6a664}}
+@keyframes mnt-tool{0%,13%,68%,100%{transform:none;opacity:1}22%,31%{transform:translate(55px,-120px);opacity:1}35%{transform:translate(61px,-126px)}39%{transform:translate(55px,-120px)}47%{transform:translate(13px,-47px)}58%{transform:none}}
+@keyframes mnt-inspection{0%,8%{transform:translateY(6px)}18%,87%{transform:none}100%{transform:translateY(6px)}}
+@keyframes mnt-check{0%,35%{opacity:.12}48%,88%{opacity:1}100%{opacity:.12}}
+@keyframes mnt-scan{0%,12%{opacity:0;transform:translate(-75px,-37px)}18%{opacity:.9;transform:translate(-75px,-37px)}57%{opacity:.7;transform:translate(125px,62px)}65%,100%{opacity:0;transform:translate(125px,62px)}}
+.motion-paused .motion-scene .motion-part{animation:none!important}
+@media(prefers-reduced-motion:reduce){.motion-scene .motion-part{animation:none!important}}

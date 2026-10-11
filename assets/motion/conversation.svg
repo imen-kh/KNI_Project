@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" class="motion-scene-svg" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="cnv-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eee2c4"/><stop offset="1" stop-color="#c9b485"/></linearGradient>
+<linearGradient id="cnv-paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffdf2"/><stop offset="1" stop-color="#e3ead9"/></linearGradient>
+<filter id="cnv-shadow" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<ellipse cx="354" cy="341" rx="226" ry="36" fill="#143e34" opacity=".12" filter="url(#cnv-shadow)"/>
+<g class="motion-part cnv-desk">
+<path d="M121 240v54l14 7v-54M326 343v51l14 7v-51M575 228v54l14-7v-54" fill="#b2945d"/>
+<path d="M102 218L361 89 600 208v14L341 351 102 232Z" fill="#b9a271"/>
+<path d="M102 218L361 89 600 208 341 337Z" fill="url(#cnv-top)"/>
+<path d="M109 219L341 335 593 209M124 212L350 325M138 205L361 317" stroke="#f4e6c4" stroke-width="1" fill="none" opacity=".5"/>
+</g>
+<g class="motion-part cnv-paper">
+<path d="M208 186L364 107 506 177 345 258 328 255 318 270 175 199Z" fill="#163e2f" opacity=".1"/>
+<path d="M178 188L328 112 363 119 388 100 527 169 376 246 346 237 323 260Z" fill="url(#cnv-paper)" stroke="#c4cfb7" stroke-width="1"/>
+<path d="M328 112L346 237M363 119L376 246" fill="none" stroke="#aebda5" stroke-width=".85"/>
+<path d="M328 112L363 119 376 246 346 237Z" fill="#becdb5" opacity=".22"/>
+<path d="M199 189l111-56m-91 66l111-56m-91 66l111-56m-90 66l111-56m-90 66l111-56M236 171l96 49m-70-61l96 49m-69-62l96 49m-69-62l96 49m-70-61l96 49" stroke="#b4c6ad" stroke-width=".7" fill="none" opacity=".6"/>
+</g>
+<g class="motion-part cnv-plan" fill="none" stroke="#2c654a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path pathLength="1000" d="M224 185l99-49 39 19 30-15 91 45-127 64Z"/>
+<path pathLength="1000" d="M258 169l99 49m-54-28l54-27 37 18-54 27m-18-42l-29 15m83-32l1 27m44 7l-42 21 23 11"/>
+<path pathLength="1000" d="M235 184l24 12 24-12-24-12Zm26 13l24 12 24-12-24-12Zm26 13l24 12 24-12-24-12Z" fill="#d7e4cb"/>
+<path pathLength="1000" d="M405 169l26 13 26-13-26-13Zm-25 26l28 14 28-14-28-14Z" fill="#d7e4cb"/>
+</g>
+<g class="motion-part cnv-detail" fill="#bd9958">
+<circle cx="294" cy="157" r="3"/><circle cx="366" cy="169" r="3"/><circle cx="372" cy="225" r="3"/>
+<path d="M295 229l-6-3 7-3 6 3zM307 235l-6-3 7-3 6 3zM319 241l-6-3 7-3 6 3z"/>
+<path d="M485 150l-7-4 7-3 7 3z"/>
+</g>
+<g class="motion-part cnv-pencil">
+<path d="M463 252L526 220 533 224 470 256Z" fill="#ba9350"/>
+<path d="M463 252L456 259 470 256Z" fill="#f0ddb4"/><path d="M456 259l4-4 2 2Z" fill="#174737"/>
+<path d="M526 220l7 4 5-3-7-4Z" fill="#50755d"/>
+<path d="M468 251l58-29" stroke="#e3c891" stroke-width="1"/>
+</g>
+<g class="motion-part cnv-ruler">
+<path d="M250 270l90 45 14-7-90-45Z" fill="#f5e8c3" stroke="#b89d62"/>
+<path d="M267 271l-5 3m14 1l-5 3m14 1l-5 3m14 1l-7 4m16 0l-5 3m14 1l-5 3m14 1l-5 3m14 1l-7 4" stroke="#9e8555" stroke-width="1"/>
+</g>
+<g class="motion-part cnv-bubble cnv-bubble-1">
+<path d="M102 66Q102 54 114 54H225Q237 54 237 66V111Q237 123 225 123H173L153 144V123H114Q102 123 102 111Z" fill="#174c38"/>
+<path d="M124 74h82m-82 13h64m-64 13h39" stroke="#dbd9b9" stroke-width="4" stroke-linecap="round"/>
+<circle cx="215" cy="100" r="5" fill="#bd9958"/>
+</g>
+<g class="motion-part cnv-bubble cnv-bubble-2">
+<path d="M473 33Q473 21 485 21H594Q606 21 606 33V79Q606 91 594 91H556V109L536 91H485Q473 91 473 79Z" fill="#efe7ce" stroke="#bd9958" stroke-width="1.5"/>
+<path d="M495 41h83m-83 13h59m-59 13h30" stroke="#3d6950" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M558 66l5 5 9-10" stroke="#bc9553" stroke-width="3" fill="none" stroke-linecap="round"/>
+</g>
+<g class="motion-part cnv-link" fill="none" stroke="#b99553" stroke-width="2" stroke-linecap="round">
+<path pathLength="1000" d="M240 86C308 38 396 33 463 58" stroke-dasharray="4 8"/>
+<path pathLength="1000" d="M267 79C330 105 413 107 458 79" stroke-dasharray="4 8"/>
+<path d="M451 50l12 8-14 1M277 78l-10 1 7 8"/>
+</g>
+<g class="motion-part cnv-coffee">
+<ellipse cx="145" cy="221" rx="22" ry="11" fill="#315c43" opacity=".16"/>
+<path d="M128 207v15c0 10 33 10 33 0v-15" fill="#edf0dd"/>
+<ellipse cx="144.5" cy="207" rx="16.5" ry="8" fill="#fff9e9"/><ellipse cx="144.5" cy="207" rx="11" ry="4.5" fill="#947c56"/>
+<path d="M160 209q14-3 10 9-3 6-10 3" fill="none" stroke="#f6f1df" stroke-width="4"/>
+<path d="M139 193q-5-7 1-15m8 17q-5-7 1-15" fill="none" stroke="#b0b99c" stroke-width="1.4" stroke-linecap="round"/>
+</g>
+</svg>

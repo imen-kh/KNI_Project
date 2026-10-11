@@ -1,0 +1,33 @@
+/* KNI office: staged 8-second assembly. Static SVG remains fully furnished. */
+.hero-office-scene .office-assembly-svg{display:block;width:100%;height:auto;overflow:visible}
+.hero-office-scene .oa-part{transform-box:fill-box;transform-origin:center;animation-duration:8s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.22,.8,.25,1);will-change:transform,opacity}
+.hero-office-scene .oa-wall-left{animation-name:oa-wall-left}
+@keyframes oa-wall-left{0%,4%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}13%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-wall-back{animation-name:oa-wall-back}
+@keyframes oa-wall-back{0%,7%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}17%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-rug{animation-name:oa-rug}
+@keyframes oa-rug{0%,13%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}20%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-storage{animation-name:oa-storage}
+@keyframes oa-storage{0%,17%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}25%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-desk-1{animation-name:oa-desk-1}
+@keyframes oa-desk-1{0%,18%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}28%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-desk-2{animation-name:oa-desk-2}
+@keyframes oa-desk-2{0%,21%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}31%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-desk-3{animation-name:oa-desk-3}
+@keyframes oa-desk-3{0%,24%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}34%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-desk-4{animation-name:oa-desk-4}
+@keyframes oa-desk-4{0%,27%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}37%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-chair-1,.hero-office-scene .oa-chair-2{animation-name:oa-chairs-a}
+@keyframes oa-chairs-a{0%,28%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}37%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-chair-3,.hero-office-scene .oa-chair-4{animation-name:oa-chairs-b}
+@keyframes oa-chairs-b{0%,32%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}41%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-meeting{animation-name:oa-meeting}
+@keyframes oa-meeting{0%,26%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}36%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-meeting-chair{animation-name:oa-meeting-chair}
+@keyframes oa-meeting-chair{0%,33%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}42%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-prop:not(.oa-storage){animation-name:oa-props}
+@keyframes oa-props{0%,34%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}44%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.hero-office-scene .oa-light{animation-name:oa-light}
+@keyframes oa-light{0%,37%{opacity:0;transform:translate(var(--oa-x,0px),var(--oa-y,-70px)) scale(.96)}47%,78%{opacity:1;transform:translate(0,0) scale(1)}89%,100%{opacity:0;transform:translate(0,30px) scale(.97)}}
+.motion-paused .hero-office-scene .oa-part{animation:none!important;transform:none!important;opacity:1!important;will-change:auto}
+@media(prefers-reduced-motion:reduce){.hero-office-scene .oa-part{animation:none!important;transform:none!important;opacity:1!important;will-change:auto}}
